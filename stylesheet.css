@@ -148,22 +148,21 @@ span a {
     }
     .right {
         margin: 90px 100px;
-        text-align: center;
-        width: none;
     }
     .right h2 {
         margin: 90px 0;
         width: 250px;
     }
-    /* .sign {
-        padding: 0 50 0 50px;
-    } */
     .sign p {
         width: 130px;
         text-align: none;
+        margin-left: 70px;
     }
     .sign a {
-        padding: 0 0 0 110px;
+        padding: 0 0 0 20px;
+    }
+    .sign input {
+        width: 250px;
     }
     .right h5 {
         margin: 0 30px 40px 20px;
