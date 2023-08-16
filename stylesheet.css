@@ -130,3 +130,36 @@ body {
 span a {
     color: var(--mycolor);
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        height: 900px;
+    }
+    .left img {
+        height: 50%;
+        margin: 20px 110px;
+    }
+    .shapes {
+        margin: 50px 180px;
+    }
+    .right {
+        margin: 90px 100px;
+    }
+    .right h2 {
+        margin: 90px 0;
+        width: 250px;
+    }
+    .sign p {
+        width: 130px;
+    }
+    .sign a {
+        padding: 0 0 0 110px;
+    }
+    .right h5 {
+        margin: 0 30px 40px 20px;
+    }
+}
