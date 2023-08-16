@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Barlow:wght@100&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Barlow:wght@100&family=Pacifico&family=Raleway&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --mycolor: #A4C4B5;
+    --textcolor: #F7F9F8;
+    --smallcolor: #CDDDC3;
+    --titlecolor: #666666;
+    --pcolor: #BABABA;
+    --ucolor: #8E85AB;
+}
+body {
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    background-color: var(--mycolor);
+    width: 50%;
+    height: 750px;
+    position: relative;
+}
+.left img {
+    position: relative;
+    width: 50%;
+    height: 60%;
+    margin: 30px 150px;
+}
+.left h2, p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    margin: 20px 110px;
+    color: var(--textcolor);
+}
+.shapes {
+    display: flex;
+    gap: 5px;
+    margin: 50px 320px;
+    text-align: center;
+}
+.cylinder {
+    border: 1px solid transparent;
+    background-color: var(--textcolor);
+    width: 30px;
+    height: 12px;
+    border-radius: 6px;
+}
+.circle {
+    background-color: var(--smallcolor);
+    border: 1px solid transparent;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.right {
+    text-align: center;
+    width: 50%;
+    margin: 90px 150px;
+}
+.right h1 {
+    font-family: 'Pacifico', cursive;
+    color: var(--titlecolor);
+}
+.right h2 {
+    color: var(--pcolor);
+    margin: 110px 0 50px;
+}
+.sign p {
+    text-align: left;
+    color: var(--pcolor);
+    font-size: 13px;
+}
+.sign input {
+    border: none;
+    border-bottom: 1px solid var(--pcolor);
+    width: 300px;
+}
+.sign a {
+    color: var(--mycolor);
+    text-decoration: none;
+    padding: 40px 0px 0 180px;
+}
+.sign button {
+    margin: 30px 0;
+    padding: 10px 60px;
+    border-radius: 20px;
+    color: var(--textcolor);
+    background-color: var(--titlecolor);
+    border: none;
+    font-size: 17px;
+}
+.right h5 {
+    display: flex;
+    color: var(--pcolor);
+    width: 200px;
+    margin: 0 150px 20px;
+}
+.right h5::before, h5::after {
+    content: " ";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+.right h5::before {
+    margin-right: 10px;
+}
+.right h5::after {
+    margin-left: 10px;
+}
+.right img {
+    height: 20px;
+}
+.register {
+    margin: 0 0 30px;
+}
+.register a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--titlecolor);
+}
+.right span {
+    color: var(--titlecolor);
+}
+span a {
+    color: var(--mycolor);
+}
