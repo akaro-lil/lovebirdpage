@@ -23,13 +23,11 @@ body {
     background-color: var(--mycolor);
     width: 50%;
     height: 750px;
-    position: relative;
+    text-align: center;
 }
 .left img {
-    position: relative;
     width: 50%;
     height: 60%;
-    margin: 30px 150px;
 }
 .left h2, p {
     font-family: 'Raleway', sans-serif;
@@ -42,7 +40,6 @@ body {
     display: flex;
     gap: 5px;
     margin: 50px 320px;
-    text-align: center;
 }
 .cylinder {
     border: 1px solid transparent;
@@ -61,7 +58,7 @@ body {
 .right {
     text-align: center;
     width: 50%;
-    margin: 90px 150px;
+    margin: auto;
 }
 .right h1 {
     font-family: 'Pacifico', cursive;
@@ -72,7 +69,6 @@ body {
     margin: 110px 0 50px;
 }
 .sign p {
-    text-align: left;
     color: var(--pcolor);
     font-size: 13px;
 }
@@ -100,7 +96,7 @@ body {
     display: flex;
     color: var(--pcolor);
     width: 200px;
-    margin: 0 150px 20px;
+    margin: auto;
 }
 .right h5::before, h5::after {
     content: " ";
@@ -130,4 +126,53 @@ body {
 }
 span a {
     color: var(--mycolor);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        height: 800px;
+    }
+    .left img {
+        height: 50%;
+        margin: 20px 110px;
+    }
+    .shapes {
+        display: none;
+    }
+    .right {
+        margin: auto;
+        width: 100%;
+    }
+    .right h2 {
+        margin: 50px auto;
+    }
+    .sign p {
+        width: 130px;
+        margin: auto;
+        padding-bottom: 5px;
+    }
+    .sign a {
+        padding: 0 0 0 20px;
+    }
+    .sign input {
+        width: 250px;
+    }
+    .right span {
+        padding: 0 0 40px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .left {
+        height: 750px;
+    }
+    .left h2, p {
+        font-size: 20px;
+    }
+    .shapes {
+        display: none;
+    }
 }
